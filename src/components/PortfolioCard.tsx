@@ -1,6 +1,7 @@
 import { PortfolioDataType } from "@/models/portfolio.data";
 import Image from "next/image";
 import React from "react";
+import { TechnologyCard } from "./TechnologyCards";
 
 export default function PortfolioCard({ data }: { data: PortfolioDataType }) {
  return (
@@ -18,9 +19,9 @@ export default function PortfolioCard({ data }: { data: PortfolioDataType }) {
      <h1 className="font-bold line-clamp-1 text-[20px]">{data.name}</h1>
      <p className="text-[16px] opacity-85 line-clamp-4">{data.detail}</p>
      <div className="flex justify-end flex-nowrap overflow-x-scroll gap-x-1 ">
-      {/* {data.techs.map((tech: string, index: number) => {
+      {data.techs.map((tech: string, index: number) => {
        return <TechnologyCard key={index} tech={tech} />;
-      })} */}
+      })}
      </div>
     </div>
    </div>
@@ -28,8 +29,3 @@ export default function PortfolioCard({ data }: { data: PortfolioDataType }) {
  );
 }
 
-const TechnologyCard = ({ tech }: { tech: string }) => {
- return (
-  <span className="px-1 py-0.75 rounded-md text-[12px] bg-black ">{tech}</span>
- );
-};
