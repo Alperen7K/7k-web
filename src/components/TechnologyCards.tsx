@@ -1,5 +1,13 @@
-export const TechnologyCard = ({ tech }: { tech: string }) => {
+export const TechnologyCard = ({
+ tech,
+ key,
+}: {
+ tech: string;
+ key: number;
+}) => {
  return (
-  <span className="px-1 py-0.75 rounded-md text-[12px] bg-black ">{tech}</span>
+  <span key={key} className="px-1 py-0.75 rounded-md text-[12px] bg-black ">
+   {tech}
+  </span>
  );
 };
