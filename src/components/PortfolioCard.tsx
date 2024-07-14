@@ -18,8 +18,8 @@ export default function PortfolioCard({ data }: { data: PortfolioDataType }) {
      <h1 className="font-bold line-clamp-1 text-[20px]">{data.name}</h1>
      <p className="text-[16px] opacity-85 line-clamp-4">{data.detail}</p>
      <div className="flex justify-end flex-nowrap overflow-x-scroll gap-x-1 ">
-      {data.techs.map((tech: string) => {
-       return <TechnologyCard tech={tech} />;
+      {data.techs.map((tech: string, index: number) => {
+       return <TechnologyCard key={index} tech={tech} />;
       })}
      </div>
     </div>
