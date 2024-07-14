@@ -1,6 +1,6 @@
 import React from "react";
-import { Title } from "../page";
 import PorfolioContainer from "@/containers/PorfolioContainer";
+import { Title } from "@/components/Title";
 
 export default function Portfolio() {
  return (
