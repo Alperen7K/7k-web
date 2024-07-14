@@ -3,9 +3,18 @@ import Image from "next/image";
 import React from "react";
 import { TechnologyCard } from "./TechnologyCards";
 
-export default function PortfolioCard({ data }: { data: PortfolioDataType }) {
+export default function PortfolioCard({
+ data,
+ key,
+}: {
+ data: PortfolioDataType;
+ key: number;
+}) {
  return (
-  <div className=" w-full max-w-[900px] bg-white/20 border-2 border-solid border-white/15 shadow-lg shadow-white/10 rounded-lg flex flex-col justify-between">
+  <div
+   key={key}
+   className=" w-full max-w-[900px] bg-white/20 border-2 border-solid border-white/15 shadow-lg shadow-white/10 rounded-lg flex flex-col justify-between"
+  >
    <div className="px-2 pt-2 pb-1.5 flex flex-col sm:flex-row gap-x-3">
     <Image
      src={data.photos[0]}
