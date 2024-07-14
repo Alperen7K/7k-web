@@ -4,7 +4,7 @@ import React from "react";
 
 export default function PortfolioCard({ data }: { data: PortfolioDataType }) {
  return (
-  <div className=" w-[100%] bg-white/20 border-2 border-solid border-white/15 shadow-lg shadow-white/10 rounded-lg flex flex-col justify-between">
+  <div className=" w-full max-w-[900px] bg-white/20 border-2 border-solid border-white/15 shadow-lg shadow-white/10 rounded-lg flex flex-col justify-between">
    <div className="px-2 pt-2 pb-1.5 flex flex-col sm:flex-row gap-x-3">
     <Image
      src={data.photos[0]}
@@ -18,9 +18,9 @@ export default function PortfolioCard({ data }: { data: PortfolioDataType }) {
      <h1 className="font-bold line-clamp-1 text-[20px]">{data.name}</h1>
      <p className="text-[16px] opacity-85 line-clamp-4">{data.detail}</p>
      <div className="flex justify-end flex-nowrap overflow-x-scroll gap-x-1 ">
-      {data.techs.map((tech: string, index: number) => {
+      {/* {data.techs.map((tech: string, index: number) => {
        return <TechnologyCard key={index} tech={tech} />;
-      })}
+      })} */}
      </div>
     </div>
    </div>
