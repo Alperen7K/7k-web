@@ -1,4 +1,11 @@
-export const ExperienceData: any = [
+export type ExperienceDataType = {
+ date: string;
+ type: string;
+ jobTitle: string;
+ description: string;
+ company: string;
+};
+export const ExperienceData: ExperienceDataType[] = [
  {
   type: "Job",
   date: "07/2023 - ...",

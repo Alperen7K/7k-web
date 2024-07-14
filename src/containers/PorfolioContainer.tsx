@@ -1,5 +1,8 @@
 import PortfolioCard from "@/components/PortfolioCard";
-import { PortfolioData, PortfolioDataType } from "@/models/portfolio.data";
+import {
+ PortfolioData,
+ PortfolioDataType,
+} from "@/models/portfolio/portfolio.data";
 import React from "react";
 
 export default function PorfolioContainer() {

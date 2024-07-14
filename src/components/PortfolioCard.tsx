@@ -1,7 +1,9 @@
-import { PortfolioDataType } from "@/models/portfolio.data";
-import Image from "next/image";
+"use client";
 import React from "react";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { TechnologyCard } from "./TechnologyCards";
+import { PortfolioDataType } from "@/models/portfolio/portfolio.data";
 
 export default function PortfolioCard({
  data,
@@ -10,10 +12,14 @@ export default function PortfolioCard({
  data: PortfolioDataType;
  key: number;
 }) {
+ const navigate = useRouter();
  return (
   <div
+   onClick={() => {
+    navigate.push("/portfolio/" + data.path);
+   }}
    key={key}
-   className=" w-full max-w-[900px] bg-white/20 border-2 border-solid border-white/15 shadow-lg shadow-white/10 rounded-lg flex flex-col justify-between"
+   className="cursor-pointer w-full max-w-[900px] bg-white/5 border-2 border-solid border-white/15 shadow-lg shadow-white/10 rounded-lg flex flex-col justify-between"
   >
    <div className="px-2 pt-2 pb-1.5 flex flex-col sm:flex-row gap-x-3">
     <Image
@@ -21,7 +27,7 @@ export default function PortfolioCard({
      alt={data.name + "image"}
      width={200}
      height={100}
-     className="w-full sm:w-[30%] aspect-[5.5/3] object-cover rounded-md"
+     className="w-full sm:w-[30%] aspect-[5.5/3] object-contain rounded-md"
     />
     <div className="w-full space-y-2 ">
      <h2 className="text-end text-[14px] opacity-80">{data.duty}</h2>
@@ -37,4 +43,3 @@ export default function PortfolioCard({
   </div>
  );
 }
-
