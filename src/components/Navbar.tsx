@@ -22,10 +22,18 @@ export default function Navbar() {
       </label>
      </a>
      <div className="sm:block hidden space-x-6">
-      <a onClick={() => navigator.push("/portfolio")} className={labelClass}>
+      <a
+       href="/portfolio"
+       //   onClick={() => navigator.push("/portfolio")}
+       className={labelClass}
+      >
        Portfolio
       </a>
-      <a onClick={() => navigator.push("/used-techs")} className={labelClass}>
+      <a
+       href="/used-techs"
+       //   onClick={() => navigator.push("/used-techs")}
+       className={labelClass}
+      >
        Techs
       </a>
      </div>
