@@ -8,8 +8,15 @@ export default function UsedTechs() {
   <div className="mx-auto  w-[95vw] sm:w-[85vw]  space-y-12  pt-10 pb-10">
    <Title title="Used Technologies" />
    <div className="w-full grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 place-items-center gap-2 sm:gap-6 ">
-    {UsedTechsData.map((tech: UsedTechsDataType) => {
-     return <UsedTechsCard img={tech.img} name={tech.name} link={tech.link} />;
+    {UsedTechsData.map((tech: UsedTechsDataType, index: number) => {
+     return (
+      <UsedTechsCard
+       key={index}
+       img={tech.img}
+       name={tech.name}
+       link={tech.link}
+      />
+     );
     })}
    </div>
   </div>
