@@ -23,8 +23,8 @@ export default function RootLayout({
  return (
   <html lang="en">
    <body className={montserrat.className}>
-    <Navbar />
     <div className="min-h-screen w-full overflow-x-hidden bg-black  text-white">
+     <Navbar />
      {children}
     </div>
     <Footer />
