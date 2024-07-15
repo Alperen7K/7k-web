@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import mail from "../../public/icons/mail.svg";
@@ -5,8 +6,10 @@ import phone from "../../public/icons/phone.svg";
 import github from "../../public/icons/github.svg";
 import linkedin from "../../public/icons/linkedin.svg";
 import instagram from "../../public/icons/instagram.svg";
+import { useRouter } from "next/navigation";
 
 export default function Footer() {
+ const navigate = useRouter();
  const iconClass =
   "w-6 shadow rounded-lg  hover:bg-antrasit duration-300 hover:scale-[1.04] ";
 
@@ -14,7 +17,12 @@ export default function Footer() {
   <div className="w-full bg-black text-white flex items-center justify-center border-solid border-t-2 border-white">
    <div className="w-[95vw] sm:w-[85vw] mx-auto flex flex-col sm:flex-row sm:justify-between items-center gap-y-1 sm:gap-y-4 py-3">
     <div className="flex flex-col items-center gap-y-2 sm:gap-y-0">
-     <div className="text-[35px] hover:scale-[1.03] font-bold duration-300">
+     <div
+      onClick={() => {
+       navigate.push("/");
+      }}
+      className="text-[35px] hover:scale-[1.03] font-bold duration-300 cursor-pointer"
+     >
       {"7K's"}
      </div>
      <div className="w-full justify-center flex gap-2 ">

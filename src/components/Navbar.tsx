@@ -24,7 +24,7 @@ export default function Navbar() {
    <div className="h-[60px] w-full   flex items-center justify-center">
     <div className="w-[95vw] sm:w-[85vw] mx-auto h-full  rounded-b-full    flex items-center justify-between">
      <a href="/">
-      <label className="text-[35px] hover:scale-[1.03] font-bold duration-300 ">
+      <label className="text-[35px] hover:scale-[1.03] font-bold duration-300 cursor-pointer">
        {"7K's"}
       </label>
      </a>
@@ -84,17 +84,25 @@ const SideBar = ({ open, close }: { open: boolean; close: () => void }) => {
     keyboard
     className="border-l-[1px] border-solid border-white/70 max-h-screen"
    >
-    <Header />
-    <Body />
+    <Header close={close} />
+    <Body close={close} />
    </Drawer>
   </ConfigProvider>
  );
 };
 
-const Header = () => {
+const Header = ({ close }: { close: () => void }) => {
+ const navigator = useNavigate();
+
  return (
   <div className="w-full flex items-center text-white justify-between px-4 py-2 border-b-[1px] border-solid border-white/70">
-   <h1 className="text-[35px] hover:scale-[1.03] font-bold duration-300">
+   <h1
+    onClick={() => {
+     close();
+     navigator.push("/");
+    }}
+    className="text-[35px] hover:scale-[1.03] font-bold duration-300 cursor-pointer"
+   >
     {"7K's"}
    </h1>
    <Image
@@ -108,7 +116,7 @@ const Header = () => {
  );
 };
 
-const Body = () => {
+const Body = ({ close }: { close: () => void }) => {
  const navigator = useNavigate();
 
  const dashed = () => {
@@ -132,8 +140,10 @@ const Body = () => {
  const title = (content: string, navigate: string) => {
   return (
    <a
-    // href={navigate}
-    onClick={() => navigator.push(navigate)}
+    onClick={() => {
+     close();
+     navigator.push(navigate);
+    }}
     rel={content + "link"}
     className={`group flex items-center justify-between duration-300 text-white hover:text-white px-2 rounded-xl text-[32px] font-bold ${
      navigate && "cursor-pointer   hover:bg-white/15"
