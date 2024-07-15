@@ -61,8 +61,8 @@ export default function Home() {
     </div>
     <div className="space-y-10  ">
      <Title title="Education" />
-     <div className="w-full flex items-center justify-start gap-x-4">
-      <h2 className="text-[16px] opacity-80 text-nowrap">2022 / 2026 </h2> -
+     <div className="w-full flex flex-col sm:flex-row sm:items-center justify-start  gap-x-1">
+      <h2 className="text-[16px] opacity-80 text-nowrap">2022 / 2026 - </h2>
       <h1 className={historyJobTitle}>
        Selcuk University Mechatronic Engineering
       </h1>
