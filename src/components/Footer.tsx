@@ -92,7 +92,7 @@ export default function Footer() {
      </div>
     </div>
    </div>
-   <h6 className="border-t-[1px] bg-black text-white/70 text-center border-solid border-white/20 py-2 text-[12px]">
+   <div className="border-t-[1px] bg-black text-white/70 text-center border-solid border-white/20 py-2 text-[12px]">
     Powered By{"  "}
     <a
      href="https://alperen7k.com.tr"
@@ -102,7 +102,7 @@ export default function Footer() {
     >
      {"7K's"}
     </a>
-   </h6>
+   </div>
   </>
  );
 }
