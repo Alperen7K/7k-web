@@ -33,7 +33,7 @@ export default function Navbar() {
        Portfolio
       </a>
       <a onClick={() => navigator.push("/used-techs")} className={labelClass}>
-       Used Technologies
+       Techs
       </a>
      </div>
      <Image
@@ -106,9 +106,10 @@ const Header = ({ close }: { close: () => void }) => {
     {"7K's"}
    </h1>
    <Image
+    onClick={close}
     src={closeIcon}
     alt="close"
-    className="size-9"
+    className="size-9 cursor-pointer"
     width={30}
     height={30}
    />
@@ -163,7 +164,7 @@ const Body = ({ close }: { close: () => void }) => {
  return (
   <div className=" w-full flex flex-col gap-y-4 px-2 py-6  flex-grow">
    {title("Portfolio", "/portfolio")}
-   {title("Used Technologies", "/used-techs")}
+   {title("Techs", "/used-techs")}
   </div>
  );
 };
