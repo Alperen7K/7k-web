@@ -21,7 +21,7 @@ export default function PortfolioInfo() {
  }, []);
 
  return (
-  <div className="mx-auto  w-[95vw] sm:w-[85vw]  space-y-8 sm:space-y-10  pt-10 pb-20">
+  <div className="mx-auto  w-[95vw] sm:w-[85vw]  space-y-8 sm:space-y-10  pt-28 pb-20">
    <Title title={portfolioInfo?.name || ""} />
    <div className="space-y-6">
     <div className="flex  flex-wrap justify-center scale-110 gap-2">
