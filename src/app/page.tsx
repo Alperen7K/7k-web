@@ -17,7 +17,7 @@ export default function Home() {
      alt="Landin img"
      width={1600}
      height={900}
-     className=" size-full object-[25%_0%] sm:object-top object-cover absolute inset-0 grayscale"
+     className=" size-full object-[25%_0%] sm:object-top object-cover absolute inset-0 "
      layout="right"
     />
     <div className="size-full inset-0 absolute landing-section flex flex-col justify-end pb-[40%] sm:pb-[15%] items-center z-50">
