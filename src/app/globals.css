@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-a:hover{
-color: white;
+a:hover {
+ color: white;
+}
+
+@media (min-width: 640px) {
+ .landing-section {
+  background: radial-gradient(circle at 25% 50%, transparent, #01010f 75%);
+ }
+}
+
+@media (max-width: 640px) {
+ .landing-section {
+  background: radial-gradient(circle at 50% 50%, transparent, #01010f);
+ }
 }
