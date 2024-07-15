@@ -29,11 +29,11 @@ export default function Navbar() {
       </label>
      </a>
      <div className="sm:block hidden space-x-6">
-      <a onClick={() => navigator.push("/skills")} className={labelClass}>
-       Skills
-      </a>
       <a onClick={() => navigator.push("/portfolio")} className={labelClass}>
        Portfolio
+      </a>
+      <a onClick={() => navigator.push("/used-techs")} className={labelClass}>
+       Used Technologies
       </a>
      </div>
      <Image
@@ -145,7 +145,7 @@ const Body = ({ close }: { close: () => void }) => {
      navigator.push(navigate);
     }}
     rel={content + "link"}
-    className={`group flex items-center justify-between duration-300 text-white hover:text-white px-2 rounded-xl text-[32px] font-bold ${
+    className={`group flex items-center justify-between duration-300 text-white hover:text-white px-2 py-1 rounded-xl text-[32px] font-bold ${
      navigate && "cursor-pointer   hover:bg-white/15"
     }`}
    >
@@ -162,8 +162,8 @@ const Body = ({ close }: { close: () => void }) => {
 
  return (
   <div className=" w-full flex flex-col gap-y-4 px-2 py-6  flex-grow">
-   {title("Skills", "/skills")}
    {title("Portfolio", "/portfolio")}
+   {title("Used Technologies", "/used-techs")}
   </div>
  );
 };
