@@ -12,6 +12,7 @@ export default function NotFound() {
 
    <a href="/" rel="Home Link" className=" ">
     <Image
+     loading="lazy"
      src={home}
      alt="Home icon"
      className="size-20"

@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import mail from "../../public/icons/mail.svg";
 import phone from "../../public/icons/phone.svg";
 import github from "../../public/icons/github.svg";
 import linkedin from "../../public/icons/linkedin.svg";
 import instagram from "../../public/icons/instagram.svg";
-import { useRouter } from "next/navigation";
 
 export default function Footer() {
  const navigate = useRouter();
@@ -33,6 +33,7 @@ export default function Footer() {
          width={20}
          height={20}
          className={iconClass}
+         loading="lazy"
          alt="instagram logo"
         />
        </a>
@@ -40,6 +41,7 @@ export default function Footer() {
         <Image
          src={github}
          width={20}
+         loading="lazy"
          height={20}
          className={iconClass}
          alt="github logo"
@@ -50,6 +52,7 @@ export default function Footer() {
          src={linkedin}
          width={20}
          height={20}
+         loading="lazy"
          className={iconClass}
          alt="linkedin logo"
         />
@@ -64,6 +67,7 @@ export default function Footer() {
       >
        <Image
         src={phone}
+        loading="lazy"
         width={32}
         height={32}
         className={" w-[20px] "}
@@ -78,6 +82,7 @@ export default function Footer() {
        <Image
         src={mail}
         width={32}
+        loading="lazy"
         height={32}
         className={" w-[20px] "}
         alt="mail logo"
@@ -88,14 +93,14 @@ export default function Footer() {
     </div>
    </div>
    <h6 className="border-t-[1px] bg-black text-white/70 text-center border-solid border-white/20 py-2 text-[12px]">
-    Powered By{" "}
+    Powered By{"  "}
     <a
      href="https://alperen7k.com.tr"
      target="_blank"
      rel="noreferrer"
-     className="font-bold text-white"
+     className="font-bold text-white pl-1"
     >
-     7K's
+     {"7K's"}
     </a>
    </h6>
   </>

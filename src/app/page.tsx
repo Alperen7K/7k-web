@@ -1,42 +1,54 @@
 "use client";
+import Image from "next/image";
 import { Title } from "@/components/Title";
-import { ExperienceData, ExperienceDataType } from "@/models/experience.data";
 import { TypeAnimation } from "react-type-animation";
+import landing from "../../public/home-page/landing.webp";
+import { ExperienceData, ExperienceDataType } from "@/models/experience.data";
 
 export default function Home() {
  const historyJobTitle = "w-full  text-[20px]  ";
 
  return (
   <>
-   <div className="h-[100dvh] pb-[10vh] sm:pb-0 sm:h-[100vh] w-full flex flex-col justify-center items-center">
-    <TypeAnimation
-     sequence={[
-      "Hey! My name is",
-      1000,
-      "Mehmet Alperen YEDİK",
-      1000,
-      "and I am a web developer",
-      1000,
-      "if you want to know more, scroll down.",
-      1000,
-     ]}
-     wrapper="h1"
-     speed={30}
-     className="font-bold sm:text-[52px] text-[10vw] text-center drop-shadow max-w-[90vw] sm:max-w-[80vw] uppercase"
-     repeat={Infinity}
+   <div className="relative h-[100dvh] mb-10 pb-[10vh] sm:pb-0 sm:h-[100vh] w-full ">
+    <Image
+     src={landing}
+     loading="lazy"
+     alt="Landin img"
+     width={1600}
+     height={900}
+     className=" size-full object-left-top sm:object-top object-cover absolute inset-0 grayscale "
     />
+    <div className="size-full inset-0 absolute landing-section flex flex-col justify-end pb-[40%] sm:pb-[15%] items-center z-50">
+     <TypeAnimation
+      sequence={[
+       "Hey! My name is",
+       1000,
+       "Mehmet Alperen YEDİK",
+       1000,
+       "and I am a web developer",
+       1000,
+       "if you want to know more, scroll down.",
+       1000,
+      ]}
+      wrapper="h1"
+      speed={30}
+      className="font-bold sm:text-[52px] text-[10vw] text-center drop-shadow max-w-[90vw] sm:max-w-[80vw] uppercase "
+      repeat={Infinity}
+     />
+    </div>
    </div>
    <div className="mx-auto  w-[95vw] sm:w-[85vw]  space-y-16 pb-20">
     <div className="space-y-10  ">
      <Title title="About" />
-     <div className=" space-y-4 *:text-[18px] *:opacity-80">
+     <div className=" space-y-4 text-justify *:text-[18px] *:opacity-80">
       <p className="">
        Hello my name is <span className="font-bold">Mehmet Alperen YEDİK</span>.
        I was born in Konya, and I decided to stay in my hometown for my
        university education. My hunger for learning constantly motivates me to
        improve.
       </p>
-      <p className="text-[18px] opacity-80">
+      <p className="text-[18px] text-justify opacity-80">
        I began my journey of learning software through voluntary work at the
        Kapsül Technology Platform. With diligence over time, I secured my first
        job in my software career. Currently, I am actively engaged in my current

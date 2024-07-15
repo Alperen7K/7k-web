@@ -26,6 +26,8 @@ export default function PortfolioCard({
      src={data.photos[0]}
      alt={data.name + "image"}
      width={200}
+     loading="lazy"
+     quality={50}
      height={100}
      className="w-full sm:w-[30%] aspect-[5.5/3] object-contain rounded-md"
     />

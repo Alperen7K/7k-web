@@ -33,6 +33,7 @@ export default function PortfolioInfo() {
      {portfolioInfo?.photos.map((photo: StaticImageData, index: number) => {
       return (
        <Image
+        loading="lazy"
         key={index}
         src={photo}
         width={400}

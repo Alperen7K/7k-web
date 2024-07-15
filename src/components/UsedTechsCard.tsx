@@ -15,6 +15,7 @@ export const UsedTechsCard = ({ img, name, link }: UsedTechsDataType) => {
       src={img}
       alt="Tech icon"
       width={200}
+      loading="lazy"
       height={200}
       className="w-[100%] aspect-square group-hover:[transform:transformZ(1000)] "
      />
