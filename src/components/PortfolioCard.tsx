@@ -29,7 +29,7 @@ export default function PortfolioCard({
      loading="lazy"
      quality={50}
      height={100}
-     className="w-full sm:w-[30%] aspect-[5.5/3] object-contain rounded-md"
+     className="w-full sm:w-[30%] aspect-[5.5/3] object-contain rounded-lg"
     />
     <div className="w-full space-y-2 ">
      <h2 className="text-end text-[14px] opacity-80">{data.duty}</h2>
