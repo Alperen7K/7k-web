@@ -21,7 +21,7 @@ export default function RootLayout({
  children: React.ReactNode;
 }>) {
  return (
-  <html lang="en">
+  <html lang="en" className="bg-black">
    <body className={montserrat.className}>
     <div className="min-h-screen w-full overflow-x-hidden bg-black  text-white">
      <Navbar />
