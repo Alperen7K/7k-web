@@ -6,7 +6,7 @@ export const ExperienceContainer = () => {
  return (
   <div className="space-y-10">
    <Title title="Experience" />
-   <div className="space-y-14">
+   <div className="space-y-10">
     {ExperienceData.map((exp: ExperienceDataType, index: number) => {
      return (
       <div key={index} className="space-y-4  ">
