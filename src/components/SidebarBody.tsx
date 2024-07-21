@@ -21,7 +21,7 @@ const arrow = () => {
  );
 };
 
-const title = (content: string, navigate: string, close: () => void) => {
+const Title = (content: string, navigate: string, close: () => void) => {
  const navigator = useRouter();
 
  return (
@@ -49,8 +49,8 @@ const title = (content: string, navigate: string, close: () => void) => {
 export const SidebarBody = ({ close }: { close: () => void }) => {
  return (
   <div className=" w-full flex flex-col gap-y-4 px-2 py-6  flex-grow">
-   {title("Portfolio", "/portfolio", close)}
-   {title("Techs", "/used-techs", close)}
+   {Title("Portfolio", "/portfolio", close)}
+   {Title("Techs", "/used-techs", close)}
   </div>
  );
 };
