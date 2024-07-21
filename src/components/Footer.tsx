@@ -1,17 +1,13 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { SocialMedia } from "./SocialMedia";
 import { useRouter } from "next/navigation";
 import mail from "../../public/icons/mail.svg";
 import phone from "../../public/icons/phone.svg";
-import github from "../../public/icons/github.svg";
-import linkedin from "../../public/icons/linkedin.svg";
-import instagram from "../../public/icons/instagram.svg";
 
 export default function Footer() {
  const navigate = useRouter();
- const iconClass =
-  "w-6 shadow rounded-lg  hover:bg-antrasit duration-300 hover:scale-[1.04] ";
 
  return (
   <>
@@ -26,38 +22,7 @@ export default function Footer() {
       >
        {"7K's"}
       </div>
-      <div className="w-full justify-center flex gap-2 ">
-       <a href="https://www.instagram.com/alperenyedik/" target="_blank">
-        <Image
-         src={instagram}
-         width={20}
-         height={20}
-         className={iconClass}
-         loading="lazy"
-         alt="instagram logo"
-        />
-       </a>
-       <a href="https://github.com/Alperen7K" target="_blank">
-        <Image
-         src={github}
-         width={20}
-         loading="lazy"
-         height={20}
-         className={iconClass}
-         alt="github logo"
-        />
-       </a>
-       <a href="https://www.linkedin.com/in/alperen7k/" target="_blank">
-        <Image
-         src={linkedin}
-         width={20}
-         height={20}
-         loading="lazy"
-         className={iconClass}
-         alt="linkedin logo"
-        />
-       </a>
-      </div>
+      <SocialMedia />
      </div>
 
      <div className="flex flex-col items-center sm:items-start  gap-2 mt-4">
@@ -95,7 +60,7 @@ export default function Footer() {
    <div className="border-t-[1px] bg-black text-white/70 text-center border-solid border-white/20 py-2 text-[12px]">
     Powered By{"  "}
     <a
-     href="https://alperen7k.com.tr"
+     href="https://7ks.com.tr"
      target="_blank"
      rel="noreferrer"
      className="font-bold text-white pl-1"
