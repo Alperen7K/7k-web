@@ -2,6 +2,7 @@ import Image from "next/image";
 import { SocialMedia } from "./SocialMedia";
 import mail from "../../public/icons/mail.svg";
 import phone from "../../public/icons/phone.svg";
+import { PersonelData } from "@/models/personel.data";
 
 export const SidebarFooter = () => {
  return (
@@ -10,7 +11,7 @@ export const SidebarFooter = () => {
    <div className="flex flex-col items-center gap-2">
     <a
      className="flex items-center gap-2 cursor-pointer text-[10px] font-bold text-white"
-     href="tel:+90 546 434 60 08"
+     href={`tel:${PersonelData.phone}`}
     >
      <Image
       src={phone}
@@ -20,11 +21,11 @@ export const SidebarFooter = () => {
       loading="lazy"
       alt="Phone logo"
      />
-     +90 546 434 60 08
+     {PersonelData.phone}
     </a>
     <a
      className="flex items-center gap-2 cursor-pointer text-[10px] font-bold text-white"
-     href="mailto:mehmetalperenyedik@gmail.com"
+     href={`mailto:${PersonelData.mail}`}
     >
      <Image
       src={mail}
@@ -34,7 +35,7 @@ export const SidebarFooter = () => {
       loading="lazy"
       height={15}
      />
-     mehmetalperenyedik@gmail.com
+     {PersonelData.mail}
     </a>
    </div>
   </div>

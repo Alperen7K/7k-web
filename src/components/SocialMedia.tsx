@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import github from "../../public/icons/github.svg";
+import { PersonelData } from "@/models/personel.data";
 import linkedin from "../../public/icons/linkedin.svg";
 import instagram from "../../public/icons/instagram.svg";
 
@@ -10,7 +11,7 @@ export const SocialMedia = () => {
 
  return (
   <div className="w-full justify-center flex gap-x-3">
-   <a href="https://www.instagram.com/alperenyedik/" target="_blank">
+   <a href={PersonelData.instagram} target="_blank">
     <Image
      src={instagram}
      className={iconClass}
@@ -20,7 +21,7 @@ export const SocialMedia = () => {
      loading="lazy"
     />
    </a>
-   <a href="https://github.com/Alperen7K" target="_blank">
+   <a href={PersonelData.github} target="_blank">
     <Image
      src={github}
      className={iconClass}
@@ -30,7 +31,7 @@ export const SocialMedia = () => {
      alt="github logo"
     />
    </a>
-   <a href="https://www.linkedin.com/in/alperen7k/" target="_blank">
+   <a href={PersonelData.linkedin} target="_blank">
     <Image
      src={linkedin}
      className={iconClass}

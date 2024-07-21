@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import closeIcon from "../../public/icons/close.svg";
+import { PersonelData } from "@/models/personel.data";
 
 export const SidebarHeader = ({ close }: { close: () => void }) => {
  const navigator = useRouter();
@@ -14,7 +15,7 @@ export const SidebarHeader = ({ close }: { close: () => void }) => {
     }}
     className="text-[35px] hover:scale-[1.03] font-bold duration-300 cursor-pointer"
    >
-    {"7K's"}
+    {PersonelData.icon}
    </h1>
    <Image
     onClick={close}

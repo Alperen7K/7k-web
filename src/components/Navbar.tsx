@@ -3,10 +3,9 @@ import Image from "next/image";
 import { SideBar } from "./Sidebar";
 import React, { useState } from "react";
 import menu from "../../public/icons/menu.svg";
-import { useRouter as useNavigate } from "next/navigation";
+import { PersonelData } from "@/models/personel.data";
 
 export default function Navbar() {
- const navigator = useNavigate();
  const [open, setOpen] = useState(false);
  let labelClass = ` cursor-pointer text-[16px] md:text-[20px] rounded-b-lg hover:border-b-[3px] text-white border-solid hover:border-white box-border duration-200  `;
 
@@ -18,22 +17,14 @@ export default function Navbar() {
     <div className="w-[95vw] sm:w-[85vw] mx-auto h-full  rounded-b-full    flex items-center justify-between">
      <a href="/">
       <label className="text-[35px] hover:scale-[1.03] font-bold duration-300 cursor-pointer">
-       {"7K's"}
+       {PersonelData.icon}
       </label>
      </a>
      <div className="sm:block hidden space-x-6">
-      <a
-       href="/portfolio"
-       //   onClick={() => navigator.push("/portfolio")}
-       className={labelClass}
-      >
+      <a href="/portfolio" className={labelClass}>
        Portfolio
       </a>
-      <a
-       href="/used-techs"
-       //   onClick={() => navigator.push("/used-techs")}
-       className={labelClass}
-      >
+      <a href="/used-techs" className={labelClass}>
        Techs
       </a>
      </div>

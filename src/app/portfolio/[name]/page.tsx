@@ -9,6 +9,7 @@ import {
 } from "@/models/portfolio/portfolio.data";
 import Image, { StaticImageData } from "next/image";
 
+
 export default function PortfolioInfo() {
  const params = useParams<{ name: string }>();
  const [portfolioInfo, setPortfolioInfo] = useState<PortfolioDataType>();

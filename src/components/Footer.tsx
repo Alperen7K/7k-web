@@ -5,6 +5,7 @@ import { SocialMedia } from "./SocialMedia";
 import { useRouter } from "next/navigation";
 import mail from "../../public/icons/mail.svg";
 import phone from "../../public/icons/phone.svg";
+import { PersonelData } from "@/models/personel.data";
 
 export default function Footer() {
  const navigate = useRouter();
@@ -20,7 +21,7 @@ export default function Footer() {
        }}
        className="text-[35px] hover:scale-[1.03] font-bold duration-300 cursor-pointer"
       >
-       {"7K's"}
+       {PersonelData.icon}
       </div>
       <SocialMedia />
      </div>
@@ -28,7 +29,7 @@ export default function Footer() {
      <div className="flex flex-col items-center sm:items-start  gap-2 mt-4">
       <a
        className="flex items-center gap-2 cursor-pointer text-[15px] font-bold text-white"
-       href="tel:+90 546 434 60 08"
+       href={`tel:${PersonelData.phone}`}
       >
        <Image
         src={phone}
@@ -38,11 +39,11 @@ export default function Footer() {
         className={" w-[20px] "}
         alt="phone logo"
        />
-       +90 546 434 60 08
+       {PersonelData.phone}
       </a>
       <a
        className="flex items-center gap-2 cursor-pointer text-[15px] font-bold text-white"
-       href="mailto:mehmetalperenyedik@gmail.com"
+       href={`mailto:${PersonelData.mail}`}
       >
        <Image
         src={mail}
@@ -52,7 +53,7 @@ export default function Footer() {
         className={" w-[20px] "}
         alt="mail logo"
        />
-       mehmetalperenyedik@gmail.com
+       {PersonelData.mail}
       </a>
      </div>
     </div>
