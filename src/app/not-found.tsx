@@ -1,5 +1,5 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 import home from "../../public/icons/home.svg";
 
 export default function NotFound() {
