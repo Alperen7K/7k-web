@@ -17,6 +17,8 @@ import mongodb from "../../public/web-tech-icons/mongodb.svg";
 import nodemon from "../../public/web-tech-icons/Nodemon.svg";
 import threejs from "../../public/web-tech-icons/Three.js.svg";
 import tailwindcss from "../../public/web-tech-icons/Tailwind CSS.svg";
+import csharp from "../../public/web-tech-icons/CSharp.svg";
+import dotnetcore from "../../public/web-tech-icons/DotNetCore.svg";
 
 export type UsedTechsDataType = {
  img: any;
@@ -34,6 +36,16 @@ export const UsedTechsData: UsedTechsDataType[] = [
  { img: nodejs, name: "Node.Js", link: "https://nodejs.org/" },
  { img: reactjs, name: "React.Js", link: "https://reactjs.org/" },
  { img: nextjs, name: "Next.Js", link: "https://nextjs.org/" },
+ {
+  img: csharp,
+  name: "C#",
+  link: "https://learn.microsoft.com/en-us/dotnet/csharp/",
+ },
+ {
+  img: dotnetcore,
+  name: ".Net Core",
+  link: "https://dotnet.microsoft.com/en-us/download",
+ },
  { img: git, name: "Git", link: "https://git-scm.com/" },
  { img: nginx, name: "NGINX", link: "https://www.nginx.com/" },
  { img: npm, name: "npm", link: "https://www.npmjs.com/" },
