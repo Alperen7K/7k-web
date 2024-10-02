@@ -14,7 +14,7 @@ export const ExperienceContainer = () => {
        <h1 className="opacity-80 text-[16px] ">{exp.date}</h1>
        <div className=" flex flex-col sm:flex-row sm:items-center gap-x-4 text-nowrap">
         <h1 className=" text-[24px] font-semibold ">{exp.jobTitle}</h1>
-        <span className="hidden sm:block mx-4"> - </span>
+        <span className="hidden sm:block px-4"> - </span>
         <h1 className="w-full  text-[20px]">{exp.company}</h1>
        </div>
        <p className="text-[16px] text-justify opacity-90">{exp.description}</p>
