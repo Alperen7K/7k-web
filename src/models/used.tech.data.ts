@@ -14,6 +14,8 @@ import nextjs from "../../public/web-tech-icons/Next.js.svg";
 import antd from "../../public/web-tech-icons/Ant Design.svg";
 import express from "../../public/web-tech-icons/Express.svg";
 import mongodb from "../../public/web-tech-icons/mongodb.svg";
+import postgresql from "../../public/web-tech-icons/PostgreSQL.svg";
+import docker from "../../public/web-tech-icons/docker.svg";
 import nodemon from "../../public/web-tech-icons/Nodemon.svg";
 import threejs from "../../public/web-tech-icons/Three.js.svg";
 import tailwindcss from "../../public/web-tech-icons/Tailwind CSS.svg";
@@ -52,6 +54,8 @@ export const UsedTechsData: UsedTechsDataType[] = [
  { img: threejs, name: "Three.js", link: "https://threejs.org/" },
  { img: express, name: "Express", link: "https://expressjs.com/" },
  { img: mongodb, name: "MongoDB", link: "https://www.mongodb.com/" },
+ { img: postgresql, name: "PostgreSQL", link: "https://www.postgresql.org/" },
+ { img: docker, name: "Docker", link: "https://www.docker.com/" },
  { img: nodemon, name: "Nodemon", link: "https://nodemon.io/" },
  {
   img: css,
