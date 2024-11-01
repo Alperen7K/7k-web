@@ -5,7 +5,7 @@ import avt_web_2 from "../../../public/portfolio-images/avt-web/Screenshot 2024-
 export const avt_web: PortfolioDataType = {
  path: "aivisiontech-website",
  name: "aivisiontech Website",
- duty: "Freelance",
+ duty: "aivisiontech",
  techs: [
   "React.js",
   "Typescript",
