@@ -21,7 +21,7 @@ export default function PortfolioCard({
    key={key}
    className="cursor-pointer w-full max-w-[900px] bg-white/5 border-2 border-solid border-white/40 shadow-lg shadow-white/10 rounded-lg flex flex-col justify-between"
   >
-   <div className="px-2 pt-2 pb-1.5 flex flex-col sm:flex-row gap-3">
+   <div className="px-2 pt-2 pb-1.5 flex flex-col sm:flex-row gap-3 min-w-[200px] min-h-[100px]">
     <Image
      src={data.photos[0]}
      alt={data.name + "image"}
