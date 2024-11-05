@@ -18,4 +18,5 @@ export const press: PortfolioDataType = {
  detail:
   "In this project, we developed a single website to showcase news articles featuring the Kapsul Technology Platform. The project consists of one backend and one frontend component. I managed the frontend part of the project. The frontend includes an admin panel protected by an authorization system, allowing users to view published posts and edit, delete, or create new ones according to their preferences. Additionally, there is a section where published posts are displayed, and I implemented a responsive structure to showcase all news articles efficiently.",
  photos: [press_1, press_2],
+ link: "https://basindabiz.kapsul.org.tr/",
 };

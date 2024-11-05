@@ -18,4 +18,5 @@ export const events: PortfolioDataType = {
  detail:
   "In this project, we developed a single website to showcase events organized by the Kapsul Technology Platform. The project consists of one backend and one frontend component. I managed the frontend part of the project. The frontend includes an admin panel protected by an authorization system, allowing users to view, edit, delete, or create new events according to their preferences. Additionally, there is a section where published events are displayed, and I implemented a responsive structure to showcase all events efficiently. This ensures that visitors can easily access all the details of the events.",
  photos: [events_1, events_2],
+ link: "https://etkinlik.kapsul.org.tr/",
 };
