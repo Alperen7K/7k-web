@@ -12,6 +12,7 @@ import { tp2ae } from "./tp2ae";
 import { press } from "./press";
 import { events } from "./events";
 import { ozteknik } from "./ozteknik";
+import { avt_academy } from "./avt-academy";
 
 export type PortfolioDataType = {
  path: string;
@@ -26,6 +27,7 @@ export type PortfolioDataType = {
 export const PortfolioData: PortfolioDataType[] = [
  ktp_web_new,
  avt_web,
+ avt_academy,
  ozteknik,
  form_builder,
  news_writting,
