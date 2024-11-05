@@ -1,9 +1,10 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { LinkCard } from "./LinkCard";
 import { useRouter } from "next/navigation";
-import { LinkCard, TechnologyCard } from "./TechnologyCards";
-import { PortfolioDataType } from "@/models/portfolio/portfolio.data";
+import { TechnologyCard } from "./TechnologyCards";
+import { PortfolioDataType } from "@/models/portfolio";
 
 export default function PortfolioCard({
  data,

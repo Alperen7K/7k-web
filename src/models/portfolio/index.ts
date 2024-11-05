@@ -20,7 +20,7 @@ export type PortfolioDataType = {
  techs: string[];
  detail: string;
  photos: StaticImageData[];
- link: string | null;
+ link?: string;
 };
 
 export const PortfolioData: PortfolioDataType[] = [

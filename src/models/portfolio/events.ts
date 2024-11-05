@@ -1,4 +1,4 @@
-import { PortfolioDataType } from "./portfolio.data";
+import { PortfolioDataType } from ".";
 import events_1 from "../../../public/portfolio-images/events/Screenshot 2024-07-14 at 16.29.23.png";
 import events_2 from "../../../public/portfolio-images/events/Screenshot 2024-07-14 at 16.29.34.png";
 

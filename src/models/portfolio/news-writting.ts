@@ -1,4 +1,4 @@
-import { PortfolioDataType } from "./portfolio.data";
+import { PortfolioDataType } from ".";
 import news_writting_1 from "../../../public/portfolio-images/news-writting/main-page.png";
 import news_writting_2 from "../../../public/portfolio-images/news-writting/fikir-ver.png";
 

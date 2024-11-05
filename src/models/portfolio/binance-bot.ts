@@ -1,4 +1,4 @@
-import { PortfolioDataType } from "./portfolio.data";
+import { PortfolioDataType } from ".";
 import binance_bot_1 from "../../../public/portfolio-images/binance-bot/binance-2.png";
 import binance_bot_2 from "../../../public/portfolio-images/binance-bot/binance-3.png";
 

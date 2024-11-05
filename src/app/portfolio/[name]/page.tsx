@@ -3,10 +3,7 @@ import { Title } from "@/components/Title";
 import { useParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { TechnologyCard } from "@/components/TechnologyCards";
-import {
- PortfolioData,
- PortfolioDataType,
-} from "@/models/portfolio/portfolio.data";
+import { PortfolioData, PortfolioDataType } from "@/models/portfolio";
 import Image, { StaticImageData } from "next/image";
 
 

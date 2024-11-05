@@ -1,4 +1,4 @@
-import { PortfolioDataType } from "./portfolio.data";
+import { PortfolioDataType } from ".";
 import form_builder_1 from "../../../public/portfolio-images/form-builder/Screenshot 2024-07-14 at 15.54.33.png";
 import form_builder_2 from "../../../public/portfolio-images/form-builder/Screenshot 2024-07-14 at 15.54.46.png";
 

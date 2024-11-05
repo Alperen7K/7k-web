@@ -1,4 +1,4 @@
-import { PortfolioDataType } from "./portfolio.data";
+import { PortfolioDataType } from ".";
 import ktp_web_1 from "../../../public/portfolio-images/ktp-web-new/Screenshot 2024-07-13 at 13.36.24.png";
 import ktp_web_2 from "../../../public/portfolio-images/ktp-web-new/Screenshot 2024-07-13 at 13.37.13.png";
 

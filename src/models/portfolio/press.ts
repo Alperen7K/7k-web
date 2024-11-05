@@ -1,4 +1,4 @@
-import { PortfolioDataType } from "./portfolio.data";
+import { PortfolioDataType } from ".";
 import press_1 from "../../../public/portfolio-images/basında-biz/Screenshot 2024-07-14 at 16.29.50.png";
 import press_2 from "../../../public/portfolio-images/basında-biz/Screenshot 2024-07-14 at 16.29.59.png";
 

@@ -1,4 +1,4 @@
-import { PortfolioDataType } from "./portfolio.data";
+import { PortfolioDataType } from ".";
 import tp2ae_1 from "../../../public/portfolio-images/tp2ae/second.png";
 import tp2ae_2 from "../../../public/portfolio-images/tp2ae/third.png";
 

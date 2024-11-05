@@ -1,4 +1,4 @@
-import { PortfolioDataType } from "./portfolio.data";
+import { PortfolioDataType } from ".";
 import scanner_1 from "../../../public/portfolio-images/scanner/main.png";
 import scanner_2 from "../../../public/portfolio-images/scanner/shift.png";
 

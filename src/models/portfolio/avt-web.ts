@@ -1,4 +1,4 @@
-import { PortfolioDataType } from "./portfolio.data";
+import { PortfolioDataType } from ".";
 import avt_web_1 from "../../../public/portfolio-images/avt-web/Screenshot 2024-07-13 at 13.37.55.png";
 import avt_web_2 from "../../../public/portfolio-images/avt-web/Screenshot 2024-07-13 at 13.38.10.png";
 

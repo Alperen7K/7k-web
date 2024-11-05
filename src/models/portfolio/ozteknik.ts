@@ -1,4 +1,4 @@
-import { PortfolioDataType } from "./portfolio.data";
+import { PortfolioDataType } from ".";
 import ozteknik_1 from "../../../public/portfolio-images/ozteknik/Screenshot 2024-07-14 at 16.43.11.png";
 import ozteknik_2 from "../../../public/portfolio-images/ozteknik/Screenshot 2024-07-14 at 16.43.23.png";
 

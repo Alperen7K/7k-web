@@ -1,4 +1,4 @@
-import { PortfolioDataType } from "./portfolio.data";
+import { PortfolioDataType } from ".";
 import shift_export_1 from "../../../public/portfolio-images/shift-export/shift-export-1.png";
 import shift_export_2 from "../../../public/portfolio-images/shift-export/shift-export-2.png";
 
