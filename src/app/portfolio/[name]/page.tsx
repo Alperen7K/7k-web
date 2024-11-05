@@ -2,10 +2,10 @@
 import { Title } from "@/components/Title";
 import { useParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
+import Image, { StaticImageData } from "next/image";
 import { TechnologyCard } from "@/components/TechnologyCards";
 import { PortfolioData, PortfolioDataType } from "@/models/portfolio";
-import Image, { StaticImageData } from "next/image";
-
+import { LinkCard } from "@/components/LinkCard";
 
 export default function PortfolioInfo() {
  const params = useParams<{ name: string }>();
@@ -26,6 +26,9 @@ export default function PortfolioInfo() {
      {portfolioInfo?.techs.map((tech: string, index: number) => {
       return <TechnologyCard key={index} tech={tech} />;
      })}
+     <span className="px-1">
+      {portfolioInfo?.link && <LinkCard link={portfolioInfo?.link} />}
+     </span>
     </div>
     <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
      {portfolioInfo?.photos.map((photo: StaticImageData, index: number) => {
