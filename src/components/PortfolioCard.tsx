@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { TechnologyCard } from "./TechnologyCards";
+import { LinkCard, TechnologyCard } from "./TechnologyCards";
 import { PortfolioDataType } from "@/models/portfolio/portfolio.data";
 
 export default function PortfolioCard({
@@ -32,7 +32,15 @@ export default function PortfolioCard({
      className="w-full sm:w-[30%] aspect-[5.5/3] object-contain rounded-lg"
     />
     <div className="w-full space-y-2 ">
-     <h2 className="text-end text-[14px] opacity-80">{data.duty}</h2>
+     <h2 className="text-end text-[14px] opacity-80 ">
+      {data.link && (
+       <>
+        <LinkCard link={data.link} />
+        <span className="px-1"></span>
+       </>
+      )}
+      {data.duty}
+     </h2>
      <h1 className="font-bold line-clamp-1 text-[20px]">{data.name}</h1>
      <p className="text-[16px] opacity-85 line-clamp-4">{data.detail}</p>
      <div className="hidden md:flex justify-end flex-nowrap overflow-x-hidden gap-x-1 ">
