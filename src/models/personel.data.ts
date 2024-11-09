@@ -13,8 +13,6 @@ export const PersonelData = {
  github: "https://github.com/Alperen7K",
  universityYear: "2022 / 2026 - ",
  university: "Selcuk University Mechatronic Engineering",
- firstDescription:
-  "Hello my name is Mehmet Alperen YEDİK. I was born in Konya, and I decided to stay in my hometown for my university education. My hunger for learning constantly motivates me to improve.",
- secondDescription:
+ description:
   "I’m Mehmet Alperen Yedik, a passionate Web Developer with a focus on both frontend and backend technologies. Proficient in React.js, Next.js, Node.js, and .NET Core, I build robust and dynamic applications. I’m also skilled in JavaScript, TypeScript, and C#, with a deep understanding of database systems like PostgreSQL and MongoDB. My toolkit includes Docker, Git, and Nginx, allowing me to deliver optimized, scalable solutions. Constantly pushing my boundaries, I embrace every new challenge as a chance to grow and innovate.",
 };
