@@ -16,5 +16,5 @@ export const PersonelData = {
  firstDescription:
   "Hello my name is Mehmet Alperen YEDİK. I was born in Konya, and I decided to stay in my hometown for my university education. My hunger for learning constantly motivates me to improve.",
  secondDescription:
-  "I began my journey of learning software through voluntary work at the Kapsül Technology Platform. With diligence over time, I secured my first job in my software career. Currently, I am actively engaged in my current job, and alongside that, I continue to enhance my skills through voluntary internship at Aivisiontech. Additionally, I am involved in freelance projects to further diversify my experiences.",
+  "I’m Mehmet Alperen Yedik, a passionate Web Developer with a focus on both frontend and backend technologies. Proficient in React.js, Next.js, Node.js, and .NET Core, I build robust and dynamic applications. I’m also skilled in JavaScript, TypeScript, and C#, with a deep understanding of database systems like PostgreSQL and MongoDB. My toolkit includes Docker, Git, and Nginx, allowing me to deliver optimized, scalable solutions. Constantly pushing my boundaries, I embrace every new challenge as a chance to grow and innovate.",
 };
