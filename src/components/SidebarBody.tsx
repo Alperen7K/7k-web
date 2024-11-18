@@ -51,6 +51,7 @@ export const SidebarBody = ({ close }: { close: () => void }) => {
   <div className=" w-full flex flex-col gap-y-4 px-2 py-6  flex-grow">
    {Title("Portfolio", "/portfolio", close)}
    {Title("Techs", "/used-techs", close)}
+   {Title("CV", "/cv", close)}
   </div>
  );
 };
