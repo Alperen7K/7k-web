@@ -27,6 +27,9 @@ export default function Navbar() {
       <a href="/used-techs" className={labelClass}>
        Techs
       </a>
+      <a href="/cv" className={labelClass}>
+       CV
+      </a>
      </div>
      <Image
       loading="lazy"
