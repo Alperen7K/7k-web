@@ -13,6 +13,7 @@ import { press } from "./press";
 import { events } from "./events";
 import { ozteknik } from "./ozteknik";
 import { avt_academy } from "./avt-academy";
+import { web3ogren } from "./web3ogren";
 
 export type PortfolioDataType = {
  path: string;
@@ -31,6 +32,7 @@ export const PortfolioData: PortfolioDataType[] = [
  ozteknik,
  form_builder,
  news_writting,
+ web3ogren,
  scanner,
  binance_bot,
  shift_export,
