@@ -5,7 +5,7 @@ import { ArrowLeftOutlined } from "@ant-design/icons";
 
 export default function CV() {
  return (
-  <div className="fixed inset-0 z-[1000]">
+  <div className="fixed inset-0 z-[1000] bg-black">
    <Tooltip title="Geri Dön">
     <Button
      onClick={() => window.history.back()}
