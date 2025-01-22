@@ -14,6 +14,7 @@ import { events } from "./events";
 import { ozteknik } from "./ozteknik";
 import { avt_academy } from "./avt-academy";
 import { web3ogren } from "./web3ogren";
+import { orion_twin_first } from "./orion-twin-first";
 
 export type PortfolioDataType = {
  path: string;
@@ -29,6 +30,7 @@ export const PortfolioData: PortfolioDataType[] = [
  ktp_web_new,
  avt_web,
  avt_academy,
+ orion_twin_first,
  ozteknik,
  form_builder,
  news_writting,
