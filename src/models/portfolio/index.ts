@@ -15,7 +15,7 @@ import { ozteknik } from "./ozteknik";
 import { avt_academy } from "./avt-academy";
 import { web3ogren } from "./web3ogren";
 import { orion_twin_first } from "./orion-twin-first";
-
+import { kuzem } from "./kuzem";
 export type PortfolioDataType = {
  path: string;
  name: string;
@@ -27,6 +27,7 @@ export type PortfolioDataType = {
 };
 
 export const PortfolioData: PortfolioDataType[] = [
+ kuzem,
  ktp_web_new,
  avt_web,
  avt_academy,
