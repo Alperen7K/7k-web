@@ -10,7 +10,7 @@ export const ExperienceData: ExperienceDataType[] = [
   type: "Job (Full Time)",
   date: "09/2023 - Present",
   company: "City Technology Center",
-  jobTitle: "Web Developer",
+  jobTitle: "Full Stack Developer | Specializing in ASP.NET Core & React",
   description:
    "I work as a Full-Stack Web Developer under the City Technology Center within Konya Metropolitan Municipality. During my time here, I have developed various projects aimed at both the people of Konya and the city administration. These projects focus on contributing to the city's digital transformation and providing solutions that enhance the interaction between local government and the public.",
  },
