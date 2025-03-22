@@ -4,10 +4,13 @@ import { SideBar } from "./Sidebar";
 import React, { useState } from "react";
 import menu from "../../public/icons/menu.svg";
 import { PersonelData } from "@/models/personel.data";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
  const [open, setOpen] = useState(false);
- let labelClass = ` cursor-pointer text-[16px] md:text-[20px] rounded-b-lg hover:border-b-[3px] text-white border-solid hover:border-white box-border duration-200  `;
+ const pathname = usePathname();
+ let labelClass = ` cursor-pointer text-[16px] pb-0.5 md:text-[20px] rounded-b-lg hover:border-b-[2px] text-white border-solid hover:border-white box-border duration-200  `;
+ let activeClass = `cursor-pointer text-[16px] pb-0.5 md:text-[20px] rounded-b-lg border-b-[2px] text-white border-solid border-white box-border duration-200`;
 
  return (
   <div className="fixed top-0  py-1 z-[1000] right-0 left-0 navbar-font backdrop-blur-sm bg-black/50 text-white border-b-2 border-solid border-white/70 ">
@@ -21,13 +24,19 @@ export default function Navbar() {
       </label>
      </a>
      <div className="sm:block hidden space-x-6">
-      <a href="/portfolio" className={labelClass}>
+      <a
+       href="/portfolio"
+       className={pathname === "/portfolio" ? activeClass : labelClass}
+      >
        Portfolio
       </a>
-      <a href="/used-techs" className={labelClass}>
+      <a
+       href="/used-techs"
+       className={pathname === "/used-techs" ? activeClass : labelClass}
+      >
        Techs
       </a>
-      <a href="/cv" className={labelClass}>
+      <a href="/cv" className={pathname === "/cv" ? activeClass : labelClass}>
        CV
       </a>
      </div>
