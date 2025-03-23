@@ -40,7 +40,7 @@ export default function PortfolioInfo() {
         width={400}
         height={300}
         alt={portfolioInfo.name}
-        className="w-full aspect-[16/9] object-contain rounded-lg border-[1px] border-solid border-white/20"
+        className="w-full aspect-[16/9] object-cover rounded-lg border-[1px] border-solid border-white/20"
        />
       );
      })}
