@@ -17,6 +17,7 @@ import { web3ogren } from "./web3ogren";
 import { orion_twin_first } from "./orion-twin-first";
 import { kuzem } from "./kuzem";
 import { kapsul_tys } from "./kapsul-tys";
+import { ctc } from "./ctc";
 export type PortfolioDataType = {
  path: string;
  name: string;
@@ -28,21 +29,22 @@ export type PortfolioDataType = {
 };
 
 export const PortfolioData: PortfolioDataType[] = [
- kuzem,
- ktp_web_new,
- avt_web,
- kapsul_tys,
- avt_academy,
- orion_twin_first,
- ozteknik,
- form_builder,
- news_writting,
- web3ogren,
- scanner,
- binance_bot,
- shift_export,
- ktp_web,
- tp2ae,
- press,
- events,
+  kuzem,
+  ktp_web_new,
+  avt_web,
+  ctc,
+  kapsul_tys,
+  avt_academy,
+  orion_twin_first,
+  ozteknik,
+  form_builder,
+  news_writting,
+  web3ogren,
+  scanner,
+  binance_bot,
+  shift_export,
+  ktp_web,
+  tp2ae,
+  press,
+  events,
 ];
