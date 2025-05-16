@@ -18,20 +18,22 @@ import { orion_twin_first } from "./orion-twin-first";
 import { kuzem } from "./kuzem";
 import { kapsul_tys } from "./kapsul-tys";
 import { ctc } from "./ctc";
+import { darulHuffaz } from "./darulHuffaz";
 export type PortfolioDataType = {
- path: string;
- name: string;
- duty: string;
- techs: string[];
- detail: string;
- photos: StaticImageData[];
- link?: string;
+  path: string;
+  name: string;
+  duty: string;
+  techs: string[];
+  detail: string;
+  photos: StaticImageData[];
+  link?: string;
 };
 
 export const PortfolioData: PortfolioDataType[] = [
   kuzem,
   ktp_web_new,
   avt_web,
+  darulHuffaz,
   ctc,
   kapsul_tys,
   avt_academy,
