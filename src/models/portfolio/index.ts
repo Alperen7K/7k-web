@@ -37,7 +37,7 @@ export const PortfolioData: PortfolioDataType[] = [
   ctc,
   kapsul_tys,
   avt_academy,
-  orion_twin_first,
+  // orion_twin_first,
   ozteknik,
   form_builder,
   news_writting,
