@@ -19,6 +19,7 @@ import { kuzem } from "./kuzem";
 import { kapsul_tys } from "./kapsul-tys";
 import { ctc } from "./ctc";
 import { darulHuffaz } from "./darulHuffaz";
+import { hera_medical } from "./hera-medical";
 export type PortfolioDataType = {
   path: string;
   name: string;
@@ -34,6 +35,7 @@ export const PortfolioData: PortfolioDataType[] = [
   ktp_web_new,
   avt_web,
   darulHuffaz,
+  hera_medical,
   ctc,
   kapsul_tys,
   avt_academy,
