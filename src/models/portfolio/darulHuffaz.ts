@@ -5,7 +5,7 @@ import darulHuffaz_2 from "../../../public/portfolio-images/darulHuffaz/darulHuf
 export const darulHuffaz: PortfolioDataType = {
   path: "darulHuffaz",
   name: "DARU'L HUFFAZ",
-  duty: "DARU'L HUFFAZ",
+  duty: "City Technology Center",
   techs: [
     "ASP.Net Core",
     "React.js",

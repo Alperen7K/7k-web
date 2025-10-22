@@ -20,6 +20,7 @@ import { kapsul_tys } from "./kapsul-tys";
 import { ctc } from "./ctc";
 import { darulHuffaz } from "./darulHuffaz";
 import { hera_medical } from "./hera-medical";
+import { ibs } from "./ibs";
 export type PortfolioDataType = {
   path: string;
   name: string;
@@ -31,6 +32,7 @@ export type PortfolioDataType = {
 };
 
 export const PortfolioData: PortfolioDataType[] = [
+  ibs,
   kuzem,
   ktp_web_new,
   avt_web,

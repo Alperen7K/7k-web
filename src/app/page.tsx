@@ -5,13 +5,19 @@ import { ExperienceContainer } from "@/containers/ExperienceContainer";
 
 export default function Home() {
  return (
-  <>
-   <Landing />
-   <div className="mx-auto  w-[90vw] sm:w-[85vw]  space-y-16 pb-20">
-    <About />
-    <Education />
-    <ExperienceContainer />
-   </div>
-  </>
+   <main className="min-h-screen bg-gradient-to-br from-black via-black to-gray-900/30">
+     {/* Hero Section */}
+     <Landing />
+
+     {/* Content Sections */}
+     <div className="space-y-0">
+       <About />
+       <Education />
+       <ExperienceContainer />
+     </div>
+
+     {/* Footer Spacing */}
+     <div className="h-20" />
+   </main>
  );
 }
