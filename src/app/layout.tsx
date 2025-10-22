@@ -21,14 +21,14 @@ export default function RootLayout({
  children: React.ReactNode;
 }>) {
  return (
-  <html lang="en" className="bg-black">
-   <body className={montserrat.className}>
-    <div className="min-h-screen w-full overflow-x-hidden bg-black  text-white">
-     <Navbar />
-     {children}
-    </div>
-    <Footer />
-   </body>
-  </html>
+   <html lang="en" className="bg-black">
+     <body className={montserrat.className}>
+       <div className="min-h-screen w-full overflow-x-hidden bg-black  text-white">
+         <Navbar />
+         <div className="w-[95vw] sm:w-[85vw] mx-auto">{children}</div>
+       </div>
+       <Footer />
+     </body>
+   </html>
  );
 }

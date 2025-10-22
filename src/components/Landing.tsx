@@ -11,7 +11,7 @@ import landing from "../../public/home-page/cv-img.png";
 export const Landing = () => {
   return (
     <section className="relative min-h-screen w-full bg-gradient-to-br from-black via-black to-gray-900/30">
-      <div className="container mx-auto px-4 py-16">
+      <div className=" py-16">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 min-h-[80vh]">
           {/* Sol taraf - Metin içeriği */}
           <div className="flex-1 space-y-8 text-center lg:text-left order-2 lg:order-1">
