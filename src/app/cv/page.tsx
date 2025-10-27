@@ -1,26 +1,12 @@
-"use client";
 import React from "react";
-import { Button, Tooltip } from "antd";
-import { ArrowLeftOutlined } from "@ant-design/icons";
 
 export default function CV() {
- return (
-  <div className="fixed inset-0 z-[1000] bg-black">
-   <Tooltip title="Geri Dön">
-    <Button
-     onClick={() => window.history.back()}
-     className="fixed left-4 top-4 "
-     icon={<ArrowLeftOutlined />}
-     type="default"
-     size="large"
-    />
-   </Tooltip>
-   <iframe
-    loading="lazy"
-    className="w-full min-h-screen"
-    src="https://www.canva.com/design/DAGZwdiGFQ0/fhcuIeEveNUbVRAV5uEbTw/view?embed"
-    allow="fullscreen"
-   ></iframe>
-  </div>
- );
+  return (
+    <iframe
+      loading="lazy"
+      className="w-full h-full z-[1000] fixed top-0 left-0"
+      src="/cv/cv.pdf#toolbar=1&navpanes=0&scrollbar=1"
+      title="CV"
+    ></iframe>
+  );
 }
