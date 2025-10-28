@@ -5,8 +5,17 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 
 export const Education = () => {
+  const courses = [
+    "Veri Yapıları",
+    "Algoritma Analizi",
+    "Veritabanı Yönetimi",
+    "Web Programlama",
+    "Yazılım Mühendisliği",
+    "Sistem Analizi",
+  ];
+
   return (
-    <section className="py-16">
+    <section className="py-16" id="education">
       <div className="container mx-auto px-4">
         <Card className="bg-card/50 backdrop-blur-sm border-border/50">
           <CardHeader className="text-center pb-8">
@@ -16,69 +25,49 @@ export const Education = () => {
             <Separator className="mx-auto w-20 mt-4" />
           </CardHeader>
 
-          <CardContent>
-            <div className="flex flex-col items-center space-y-6">
-              <div className="relative w-full max-w-2xl">
-                <Card className="bg-gradient-to-r from-gray-900/50 to-gray-800/50 border-l-4 border-l-white">
-                  <CardContent className="p-6">
-                    <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
-                      <div className="space-y-2">
-                        <h3 className="text-xl font-semibold">
-                          {PersonelData.university}
-                        </h3>
-                        <p className="text-muted-foreground">
-                          Yönetim Bilişim Sistemleri
-                        </p>
-                      </div>
+          <CardContent className="space-y-6">
+            <Card className=" border-border/50">
+              <CardContent className="p-6">
+                <div className="flex flex-col sm:flex-row justify-between items-start gap-4">
+                  <div>
+                    <h3 className="text-xl font-semibold">
+                      {PersonelData.university}
+                    </h3>
+                    <p className="text-primary font-medium mt-1">
+                      Yönetim Bilişim Sistemleri
+                    </p>
+                  </div>
+                  <Badge variant="secondary" className="flex-shrink-0">
+                    {PersonelData.universityYear}
+                  </Badge>
+                </div>
 
-                      <div className="flex flex-col items-start lg:items-end gap-2">
-                        <Badge variant="secondary" className="text-sm">
-                          {PersonelData.universityYear}
-                        </Badge>
-                        <Badge variant="outline">Lisans Derecesi</Badge>
-                      </div>
-                    </div>
+                <Separator className="my-4" />
 
-                    <Separator className="my-4" />
-
-                    <div className="space-y-3">
-                      <h4 className="font-medium">İlgili Dersler:</h4>
-                      <div className="flex flex-wrap gap-2">
-                        <Badge variant="outline" className="text-xs">
-                          Veri Yapıları
-                        </Badge>
-                        <Badge variant="outline" className="text-xs">
-                          Algoritma Analizi
-                        </Badge>
-                        <Badge variant="outline" className="text-xs">
-                          Veritabanı Yönetimi
-                        </Badge>
-                        <Badge variant="outline" className="text-xs">
-                          Web Programlama
-                        </Badge>
-                        <Badge variant="outline" className="text-xs">
-                          Yazılım Mühendisliği
-                        </Badge>
-                        <Badge variant="outline" className="text-xs">
-                          Sistem Analizi
-                        </Badge>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-
-              <div className="text-center space-y-2">
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground leading-relaxed">
                   Anadolu Üniversitesi&apos;nde Yönetim Bilişim Sistemleri
-                  alanında eğitimime devam ediyorum.
+                  alanında eğitimime devam ediyorum. Teorik bilgileri pratik
+                  projelerle destekleyerek kendimi sürekli geliştiriyorum.
                 </p>
-                <p className="text-sm text-muted-foreground">
-                  Teorik bilgileri pratik projelerle destekleyerek kendimi
-                  sürekli geliştiriyorum.
-                </p>
-              </div>
-            </div>
+
+                <div className="mt-6">
+                  <h4 className="text-sm font-semibold mb-3">
+                    İlgili Dersler:
+                  </h4>
+                  <div className="flex flex-wrap gap-2">
+                    {courses.map((course, index) => (
+                      <Badge
+                        key={index}
+                        variant="outline"
+                        className="text-xs hover:bg-primary hover:text-primary-foreground transition-colors"
+                      >
+                        {course}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </CardContent>
         </Card>
       </div>

@@ -60,7 +60,7 @@ export const About = () => {
             <Separator />
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Card className="bg-gray-900/50 border-gray-800">
+              <Card className="border-border/50">
                 <CardContent className="p-6 text-center">
                   <h4 className="font-semibold text-lg mb-2">Frontend</h4>
                   <p className="text-muted-foreground">
@@ -69,7 +69,7 @@ export const About = () => {
                 </CardContent>
               </Card>
 
-              <Card className="bg-gray-900/50 border-gray-800">
+              <Card className="border-border/50">
                 <CardContent className="p-6 text-center">
                   <h4 className="font-semibold text-lg mb-2">Backend</h4>
                   <p className="text-muted-foreground">
