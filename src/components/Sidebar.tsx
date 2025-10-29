@@ -12,39 +12,39 @@ export const SideBar = ({
  close: () => void;
 }) => {
  return (
-  <ConfigProvider
-   theme={{
-    token: {
-     colorIcon: "#fff",
-     colorBgElevated: "#000",
-    },
-   }}
-  >
-   <Drawer
-    onClose={close}
-    open={open}
-    closeIcon={<></>}
-    styles={{
-     body: {
-      padding: 0,
-     },
-     header: {
-      paddingTop: 0,
-      paddingBottom: 0,
-      display: "none",
-     },
-     footer: {
-      padding: 0,
-     },
-    }}
-    width={250}
-    footer={<SidebarFooter />}
-    keyboard
-    className="border-l-[1px] border-solid border-white/70 max-h-screen"
+   <ConfigProvider
+     theme={{
+       token: {
+         colorIcon: "#fff",
+         colorBgElevated: "#000",
+       },
+     }}
    >
-    <SidebarHeader close={close} />
-    <SidebarBody close={close} />
-   </Drawer>
-  </ConfigProvider>
+     <Drawer
+       onClose={close}
+       open={open}
+       closeIcon={<></>}
+       styles={{
+         body: {
+           padding: 0,
+         },
+         header: {
+           paddingTop: 0,
+           paddingBottom: 0,
+           display: "none",
+         },
+         footer: {
+           padding: 0,
+         },
+       }}
+       width={"100%"}
+       footer={<SidebarFooter />}
+       keyboard
+       className="border-l-[1px] border-solid border-white/70 max-h-screen"
+     >
+       <SidebarHeader close={close} />
+       <SidebarBody close={close} />
+     </Drawer>
+   </ConfigProvider>
  );
 };

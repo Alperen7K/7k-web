@@ -11,7 +11,7 @@ export const ExperienceContainer = () => {
         <Card className="bg-card/50 backdrop-blur-sm border-border/50">
           <CardHeader className="text-center pb-8">
             <CardTitle className="text-3xl lg:text-4xl font-bold tracking-tight">
-              Deneyim
+              Experience
             </CardTitle>
             <Separator className="mx-auto w-20 mt-4" />
           </CardHeader>

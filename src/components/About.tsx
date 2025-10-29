@@ -26,7 +26,7 @@ export const About = () => {
         <Card className="bg-card/50 backdrop-blur-sm border-border/50">
           <CardHeader className="text-center pb-8">
             <CardTitle className="text-3xl lg:text-4xl font-bold tracking-tight">
-              Hakkımda
+              About Me
             </CardTitle>
             <Separator className="mx-auto w-20 mt-4" />
           </CardHeader>
@@ -42,7 +42,7 @@ export const About = () => {
 
             <div className="space-y-4">
               <h3 className="text-xl font-semibold text-center lg:text-left">
-                Teknik Yetenekler
+                Technical Skills
               </h3>
               <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
                 {skills.map((skill, index) => (
@@ -64,7 +64,7 @@ export const About = () => {
                 <CardContent className="p-6 text-center">
                   <h4 className="font-semibold text-lg mb-2">Frontend</h4>
                   <p className="text-muted-foreground">
-                    Modern web uygulamaları geliştirme konusunda uzmanım
+                    Modern web applications development
                   </p>
                 </CardContent>
               </Card>
@@ -73,8 +73,7 @@ export const About = () => {
                 <CardContent className="p-6 text-center">
                   <h4 className="font-semibold text-lg mb-2">Backend</h4>
                   <p className="text-muted-foreground">
-                    Ölçeklenebilir ve güvenli API&apos;ler tasarlayıp
-                    geliştiriyorum
+                    Scalable and secure APIs development
                   </p>
                 </CardContent>
               </Card>

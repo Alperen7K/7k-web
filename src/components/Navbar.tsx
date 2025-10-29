@@ -30,12 +30,12 @@ export default function Navbar() {
            >
              Portfolio
            </a>
-           <a
+           {/* <a
              href="/used-techs"
              className={pathname === "/used-techs" ? activeClass : labelClass}
            >
              Techs
-           </a>
+           </a> */}
            <a
              href="/cv"
              className={pathname === "/cv" ? activeClass : labelClass}
