@@ -21,6 +21,7 @@ import { ctc } from "./ctc";
 import { darulHuffaz } from "./darulHuffaz";
 import { hera_medical } from "./hera-medical";
 import { ibs } from "./ibs";
+import { ta } from "./ta";
 export type PortfolioDataType = {
   path: string;
   name: string;
@@ -32,25 +33,26 @@ export type PortfolioDataType = {
 };
 
 export const PortfolioData: PortfolioDataType[] = [
-  ibs,
-  kuzem,
-  ktp_web_new,
-  avt_web,
-  darulHuffaz,
-  hera_medical,
-  ctc,
-  kapsul_tys,
-  avt_academy,
-  // orion_twin_first,
-  ozteknik,
-  form_builder,
-  news_writting,
-  web3ogren,
-  scanner,
-  binance_bot,
-  shift_export,
-  ktp_web,
-  tp2ae,
-  press,
-  events,
+ ibs,
+ kuzem,
+ ta,
+ ktp_web_new,
+ avt_web,
+ darulHuffaz,
+ hera_medical,
+ ctc,
+ kapsul_tys,
+ avt_academy,
+ // orion_twin_first,
+ ozteknik,
+ form_builder,
+ news_writting,
+ web3ogren,
+ scanner,
+ binance_bot,
+ shift_export,
+ ktp_web,
+ tp2ae,
+ press,
+ events,
 ];
