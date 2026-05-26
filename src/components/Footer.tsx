@@ -13,7 +13,7 @@ export default function Footer() {
  return (
   <>
    <div className="w-full bg-black text-white flex items-center justify-center border-solid border-t-2 border-white">
-    <div className="w-[95vw] sm:w-[85vw] mx-auto flex flex-col sm:flex-row sm:justify-between items-center gap-y-1 sm:gap-y-4 py-3">
+    <div className="w-[95vw] sm:w-[85vw] max-w-[1400px] mx-auto flex flex-col sm:flex-row sm:justify-between items-center gap-y-1 sm:gap-y-4 py-3">
      <div className="flex flex-col items-center gap-y-2 sm:gap-y-0">
       <div
        onClick={() => {

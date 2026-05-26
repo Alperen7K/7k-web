@@ -25,7 +25,7 @@ export default function RootLayout({
      <body className={montserrat.className}>
        <div className="min-h-screen w-full overflow-x-hidden bg-black  text-white">
          <Navbar />
-         <div className="w-[95vw] sm:w-[85vw] mx-auto">{children}</div>
+         <div className="w-[95vw] sm:w-[85vw] max-w-[1400px] mx-auto">{children}</div>
        </div>
        <Footer />
      </body>

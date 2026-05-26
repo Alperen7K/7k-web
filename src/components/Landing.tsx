@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
 import "../app/globals.css";
-import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { PersonelData } from "@/models/personel.data";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { BlurImage } from "@/components/BlurImage";
 import landing from "../../public/home-page/cv-img.png";
 
 export const Landing = () => {
@@ -24,13 +24,13 @@ export const Landing = () => {
                   <Card className="relative bg-card/80 backdrop-blur-sm border-2 border-border/50 rounded-full overflow-hidden shadow-2xl group-hover:border-border transition-all duration-500">
                     <CardContent className="p-2">
                       <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80">
-                        <Image
+                        <BlurImage
                           src={landing}
                           alt="Mehmet Alperen Yedik"
-                          width={400}
-                          height={400}
-                          className="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-500"
                           priority
+                          sizes="(max-width: 1024px) 16rem, 20rem"
+                          wrapperClassName="w-full h-full rounded-full"
+                          className="rounded-full group-hover:scale-105 transition-transform duration-500"
                         />
                         {/* Subtle overlay efekti */}
                         <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full" />

@@ -2,10 +2,11 @@
 import { Title } from "@/components/Title";
 import { useParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
-import Image, { StaticImageData } from "next/image";
+import { StaticImageData } from "next/image";
 import { TechnologyCard } from "@/components/TechnologyCards";
 import { PortfolioData, PortfolioDataType } from "@/models/portfolio";
 import { LinkCard } from "@/components/LinkCard";
+import { BlurImage } from "@/components/BlurImage";
 
 export default function PortfolioInfo() {
  const params = useParams<{ name: string }>();
@@ -19,7 +20,7 @@ export default function PortfolioInfo() {
  }, []);
 
  return (
-  <div className="mx-auto  w-[95vw] sm:w-[85vw]  space-y-8 sm:space-y-10  pt-28 pb-20">
+  <div className="mx-auto  w-[95vw] sm:w-[85vw] max-w-[1400px]  space-y-8 sm:space-y-10  pt-28 pb-20">
    <Title title={portfolioInfo?.name || ""} />
    <div className="space-y-6">
     <div className="flex  flex-wrap justify-center scale-110 gap-2">
@@ -33,14 +34,12 @@ export default function PortfolioInfo() {
     <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
      {portfolioInfo?.photos.map((photo: StaticImageData, index: number) => {
       return (
-       <Image
-        loading="lazy"
+       <BlurImage
         key={index}
         src={photo}
-        width={400}
-        height={300}
         alt={portfolioInfo.name}
-        className="w-full aspect-[16/9] object-cover rounded-lg border-[1px] border-solid border-white/20"
+        sizes="(max-width: 768px) 100vw, 50vw"
+        wrapperClassName="w-full aspect-[16/9] rounded-lg border-[1px] border-solid border-white/20"
        />
       );
      })}

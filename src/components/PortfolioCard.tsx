@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import { LinkCard } from "./LinkCard";
 import { useRouter } from "next/navigation";
 import { TechnologyCard } from "./TechnologyCards";
 import { PortfolioDataType } from "@/models/portfolio";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { BlurImage } from "./BlurImage";
 
 export default function PortfolioCard({
   data,
@@ -26,14 +26,13 @@ export default function PortfolioCard({
     >
       <CardContent className="p-4">
         <div className="flex flex-col sm:flex-row gap-4">
-          <Image
+          <BlurImage
             src={data.photos[0]}
             alt={data.name + " image"}
-            width={300}
-            loading="lazy"
             quality={70}
-            height={150}
-            className="w-full sm:w-[45%] aspect-[20/11] object-cover object-center rounded-lg"
+            sizes="(max-width: 640px) 100vw, 45vw"
+            className="object-center"
+            wrapperClassName="w-full sm:w-[45%] aspect-[20/11] rounded-lg"
           />
           <div className="w-full space-y-3 flex flex-col justify-between">
             <div className="space-y-2">
